@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Train Ticket</title>
+</head>
+<body>
+    <div class="section_ticket">
+        <h2 class="calculation">
+            Calcola il prezzo del tuo biglietto
+        </h2>
+        <div class="form">
+            <div class="row">
+                <div class="col">
+                    <label for="pax_name">
+                        Nome Cognome
+                    </label>
+                    <input id="pax_name" type="text" name="" value="" placeholder="Inserisci il tuo nome">
+                </div>
+
+                <div class="col">
+                    <label for="kilometers">Km</label>
+                    <input id="kilometers" type="number" name="" value="" placeholder="Inserisci i Km">
+                  </div>
+
+                <div class="col">
+                    <label for="age_range">
+                        Fascia d'età
+                    </label>
+                <select id="age_range" class="" name="Fascia d'età">
+                    <option value="under_age">
+                        Minorenni
+                    </option>
+                    <option value="standard">
+                        Standard
+                    </option>
+                    <option value="over_65">
+                        Over 65
+                    </option>
+                </select>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="button_spawn_cancel">
+                        <button id="spawn" class="btn" type="button" name="button">
+                            Genera
+                        </button>
+                        <button id="cancel" class="btn" type="button" name="button">
+                            Annulla
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <h2 class="calculation">
+        Il tuo biglietto
+        </h2>
+        <div id="ticket_div" class="ticket hidden">
+            <h2>
+                Dettaglio passeggeri
+            </h2>
+            <div class="print_ticket row">
+                <div class="namepax_details">
+                    <h3>
+                        Nome passeggero
+                    </h3>
+                    <h4 id="passenger_name"></h4>
+                </div>
+                <div class="ticket_details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="discount"></td>
+                                <td id="carriage"></td>
+                                <td id="cp_code"></td>
+                                <td id="ticket_price"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+ <script src="script.js" charset="UTF-8"></script>   
+</body>
+</html>
