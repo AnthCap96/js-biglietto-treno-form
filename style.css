@@ -95,6 +95,7 @@ input:focus::placeholder {
     width: 150px;
     padding-top: 10px;
     height: 100px;
+    background-color: grey;
   }
 
   .ticket_details {
